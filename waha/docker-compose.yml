@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: waha_server_1
+      APP_PORT: 3000
+  
+  server:
+    image: devlikeapro/waha:latest
+    user: "1000:1000"
+    init: true
+    restart: unless-stopped
+    environment:
+      # WAHA environment overrides can be added here if needed
+      # Example: WAHA_ENGINE: WEBJS
+      # Example: WAHA_DEBUG: "true"
+      # For Plus features, use devlikeapro/waha-plus with proper auth (not included here)
+      NODE_ENV: production
+

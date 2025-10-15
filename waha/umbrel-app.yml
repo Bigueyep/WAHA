@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: waha
+name: WAHA
+tagline: WhatsApp HTTP API (self-hosted)
+icon: https://raw.githubusercontent.com/devlikeapro/waha/core/logo.png
+category: Social
+version: "2025.10.2"
+port: 3000
+description: >-
+  WAHA - WhatsApp HTTP API (REST API) that you can install on your own server
+  and run in less than 5 minutes! Supports multiple engines.
+
+developer: devlikeapro
+website: https://waha.devlike.pro
+submitter: WAHA Umbrel Packaging
+submission: https://github.com/devlikeapro/waha
+repo: https://github.com/devlikeapro/waha
+support: https://github.com/devlikeapro/waha/issues
+gallery:
+  - https://waha.devlike.pro/dashboard
+releaseNotes: >-
+  Initial Umbrel app packaging for WAHA.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+
